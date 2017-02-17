@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>My Simon Game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <div class="row">
+    <h1 class="center">Simon Says</h1>
+  </div>
+  <div class="row" id="colorRow">
+    <button class="colorBtns circle" id="green" onClick="checkMove(this.id); fillGreen()"></button>
+    <button class="colorBtns square" id="red" onClick="checkMove(this.id); fillRed()"></button>
+    <button class="colorBtns square" id="yellow" onClick="checkMove(this.id); fillYellow()"></button>
+    <button class="colorBtns circle" id="blue" onClick="checkMove(this.id); fillBlue()"></button>
+  </div>
+
+  <div class="row">
+    <h2 class="countRow" id="count">--</div>
+  </div>
+  
+  <div class="row" id="startBtnRow">
+    <button class="start gameBtns" id="start" onClick="startGame(), fillStart()">start</button>
+    <button class="strict gameBtns" id="strict" onClick="strict()">strict</button>
+    <button class="reset gameBtns" id="reset" onClick='reset(), fillReset()'>reset</button>
+  </div>
+
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
